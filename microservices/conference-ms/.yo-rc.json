@@ -1,0 +1,56 @@
+{
+  "generator-jhipster": {
+    "blueprints": [
+      {
+        "name": "generator-jhipster-entando",
+        "version": "7.0.1"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-entando",
+        "version": "7.0.1"
+      }
+    ],
+    "applicationType": "microservice",
+    "baseName": "simple",
+    "jhipsterVersion": "7.2.0",
+    "skipClient": true,
+    "withAdminUi": false,
+    "skipUserManagement": true,
+    "skipServer": false,
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "testFrameworks": [],
+    "pages": [],
+    "creationTimestamp": 1666608757254,
+    "serviceDiscoveryType": false,
+    "reactive": false,
+    "authenticationType": "oauth2",
+    "packageName": "net.pietrangelo.simple",
+    "serverPort": "8081",
+    "cacheProvider": "caffeine",
+    "enableHibernateCache": true,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "buildTool": "maven",
+    "serverSideOptions": [],
+    "websocket": false,
+    "searchEngine": false,
+    "messageBroker": false,
+    "enableSwaggerCodegen": false,
+    "microserviceDependencies": "entando",
+    "generateMicroFrontends": "always",
+    "enableTranslation": false,
+    "nativeLanguage": "it",
+    "monorepository": true,
+    "skipCommitHook": true,
+    "jwtSecretKey": "ODEwOGE4MjhlNWE3MTZjOTVhMzY1OGZjMDI4YmIxODM2MmZiZjc3ZjdhYzYxNzExMmZiZjEwYWJhNmQ4ZmE3ZTRlNmZlYTE0YTkzOTc1MmVlMzI4MjliYzhhZDMxYWQ4ZjgzZWI0ZDk4YjNjNTM1MWYyYTNjNTMzZGE4MjYzNjQ=",
+    "enableGradleEnterprise": false,
+    "languages": ["en", "fr"]
+  }
+}
