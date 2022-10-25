@@ -1,0 +1,21 @@
+{
+  "microserviceName": "simple",
+  "clientRootFolder": "simple",
+  "databaseType": "sql",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "service": "no",
+  "readOnly": true,
+  "pagination": "infinite-scroll",
+  "name": "Conference",
+  "changelogDate": "20221024115506"
+}

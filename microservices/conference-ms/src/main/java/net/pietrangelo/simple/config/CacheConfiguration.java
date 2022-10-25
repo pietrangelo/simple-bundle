@@ -42,6 +42,7 @@ public class CacheConfiguration {
     public JCacheManagerCustomizer cacheManagerCustomizer() {
         return cm -> {
             createCache(cm, "oAuth2Authentication");
+            createCache(cm, net.pietrangelo.simple.domain.Conference.class.getName());
             // jhipster-needle-caffeine-add-entry
         };
     }

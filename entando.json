@@ -1,22 +1,72 @@
 {
-    "microservices": [],
-    "microfrontends": [
+  "microservices": [
+    {
+      "name": "conference-ms",
+      "stack": "spring-boot",
+      "healthCheckPath": "/management/health",
+      "dbms": "postgresql"
+    }
+  ],
+  "microfrontends": [
+    {
+      "name": "simple-mfe",
+      "customElement": "simple-mfe",
+      "stack": "react",
+      "type": "widget",
+      "group": "free",
+      "publicFolder": "public",
+      "titles": {
+        "en": "simple-mfe",
+        "it": "simple-mfe"
+      }
+    },
+    {
+      "name": "conference-table",
+      "customElement": "conference-table",
+      "stack": "react",
+      "type": "widget",
+      "group": "free",
+      "publicFolder": "public",
+      "titles": {
+        "en": "conference-table",
+        "it": "conference-table"
+      },
+      "apiClaims": [
         {
-            "name": "simple-mfe",
-            "customElement": "simple-mfe",
-            "stack": "react",
-            "type": "widget",
-            "group": "free",
-            "publicFolder": "public",
-            "titles": {
-                "en": "simple-mfe",
-                "it": "simple-mfe"
-            }
+          "name": "conference-api",
+          "type": "internal",
+          "serviceName": "conference-ms"
         }
-    ],
-    "svc": [],
-    "name": "simple-bundle",
-    "version": "0.0.1",
-    "description": "simple-bundle description",
-    "type": "bundle"
+      ]
+    },
+    {
+      "name": "conference-details",
+      "customElement": "conference-details",
+      "stack": "react",
+      "type": "widget",
+      "group": "free",
+      "publicFolder": "public",
+      "titles": {
+        "en": "conference-details",
+        "it": "conference-details"
+      }
+    },
+    {
+      "name": "conference-form",
+      "customElement": "conference-form",
+      "stack": "react",
+      "type": "widget",
+      "group": "free",
+      "publicFolder": "public",
+      "titles": {
+        "en": "conference-form",
+        "it": "conference-form"
+      }
+    }
+  ],
+  "svc": ["keycloak"],
+  "name": "simple-bundle",
+  "version": "0.0.1",
+  "description": "simple-bundle description",
+  "type": "bundle"
 }
